@@ -27,10 +27,18 @@ class PlaylistGroupTableViewCell: UITableViewCell, UICollectionViewDataSource, U
         super.awakeFromNib()
         self.playlistCollectionView.delegate = self
         self.playlistCollectionView.dataSource = self
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: 112, height: 130)
+        layout.minimumInteritemSpacing = 5.0
+        self.playlistCollectionView.collectionViewLayout = layout
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "playlistCellId", for: indexPath) as! PlaylistCollectionViewCell
+        if let playlists = self.playlists {
+            cell.playlist = playlists[indexPath.row]
+        }
         return cell
     }
     

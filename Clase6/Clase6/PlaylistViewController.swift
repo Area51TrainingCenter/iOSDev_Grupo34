@@ -18,17 +18,20 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         playlistGroupTableView.delegate = self
         playlistGroupTableView.dataSource = self
-        let playlist1 = Playlist(image: "image1", name: "Top 50 Peru", owner: "Spotify")
-        let playlist2 = Playlist(image: "image2", name: "Top 100 Peru", owner: "Spotify")
-        let playlist3 = Playlist(image: "image3", name: "Las pedidas", owner: "Spotify")
+        let playlist1 = Playlist(image: "playlist1", name: "Top 50 Peru", owner: "Spotify")
+        let playlist2 = Playlist(image: "playlist2", name: "Top 100 Peru", owner: "Spotify")
+        let playlist3 = Playlist(image: "playlist4", name: "Las pedidas", owner: "Spotify")
         let group1 = PlaylistGroup(groupName: "Playlist Perú", playlists: [playlist1, playlist2, playlist3, playlist1, playlist2, playlist3])
         let group2 = PlaylistGroup(groupName: "Playlist Otro país X", playlists: [playlist1, playlist2])
         self.cells.append(group1)
         self.cells.append(group2)
+        self.cells.append(group2)
+        self.cells.append(group1)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "groupCellId", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "groupCellId", for: indexPath) as! PlaylistGroupTableViewCell
+        cell.group = self.cells[indexPath.row]
         return cell
     }
     
