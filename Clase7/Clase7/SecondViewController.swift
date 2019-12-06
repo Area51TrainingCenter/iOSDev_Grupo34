@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -17,9 +17,25 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         //-12.102548,-77.0280847
         let location = CLLocationCoordinate2D(latitude: -12.102548, longitude: -77.0280847)
-        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
+        
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = location
+        annotation.title = "Area51"
+        annotation.subtitle = "Lima"
+        
+        mapView.addAnnotation(annotation)
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation.title == "Area51" {
+            let ann =  MKAnnotationView()
+            ann.image = UIImage(named: "image1")
+            return ann
+        }
+        return nil
     }
     
     @IBAction func logoutAction(_ sender: Any) {
