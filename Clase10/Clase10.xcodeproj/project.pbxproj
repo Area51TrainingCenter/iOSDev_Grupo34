@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		474F9AE90DA4F9C9FCE0D0BC /* Pods_Clase10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43E5EB42649D07E493C5B20 /* Pods_Clase10.framework */; };
+		FB5B148623A9A80200B3C05B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B148523A9A80200B3C05B /* User.swift */; };
+		FB5B148823A9AB7C00B3C05B /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B148723A9AB7C00B3C05B /* ProfileTableViewController.swift */; };
+		FB5B148B23A9B43000B3C05B /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B148A23A9B43000B3C05B /* AlertHelper.swift */; };
 		FB5B4AFD23A3144300AECFAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B4AFC23A3144300AECFAB /* AppDelegate.swift */; };
 		FB5B4AFF23A3144300AECFAB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B4AFE23A3144300AECFAB /* LoginViewController.swift */; };
 		FB5B4B0223A3144300AECFAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5B4B0023A3144300AECFAB /* Main.storyboard */; };
@@ -15,21 +18,28 @@
 		FB5B4B0723A3144500AECFAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5B4B0523A3144500AECFAB /* LaunchScreen.storyboard */; };
 		FB5B4B0F23A315A200AECFAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB5B4B0E23A315A200AECFAB /* GoogleService-Info.plist */; };
 		FB5B4B1123A3223400AECFAB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B4B1023A3223400AECFAB /* RegisterViewController.swift */; };
+		FBF9C4A023A9C8610027A838 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF9C49F23A9C8610027A838 /* UserTableViewCell.swift */; };
+		FBF9C4A223A9C9F60027A838 /* UserListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF9C4A123A9C9F50027A838 /* UserListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A41FC68A57EED1000306340 /* Pods-Clase10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clase10.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clase10/Pods-Clase10.release.xcconfig"; sourceTree = "<group>"; };
 		C906C0C2ED277DB88B430800 /* Pods-Clase10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clase10.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clase10/Pods-Clase10.debug.xcconfig"; sourceTree = "<group>"; };
 		F43E5EB42649D07E493C5B20 /* Pods_Clase10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clase10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5B148523A9A80200B3C05B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FB5B148723A9AB7C00B3C05B /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		FB5B148A23A9B43000B3C05B /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		FB5B4AF923A3144300AECFAB /* Clase10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clase10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5B4AFC23A3144300AECFAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB5B4AFE23A3144300AECFAB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FB5B4AFE23A3144300AECFAB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		FB5B4B0123A3144300AECFAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB5B4B0323A3144500AECFAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5B4B0623A3144500AECFAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB5B4B0823A3144500AECFAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB5B4B0E23A315A200AECFAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB5B4B1023A3223400AECFAB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FBF9C49F23A9C8610027A838 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		FBF9C4A123A9C9F50027A838 /* UserListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB5B148323A9A6AD00B3C05B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FBF9C49E23A9C84B0027A838 /* Cells */,
+				FB5B4AFE23A3144300AECFAB /* LoginViewController.swift */,
+				FB5B4B1023A3223400AECFAB /* RegisterViewController.swift */,
+				FB5B148723A9AB7C00B3C05B /* ProfileTableViewController.swift */,
+				FBF9C4A123A9C9F50027A838 /* UserListTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FB5B148423A9A7EB00B3C05B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB5B148523A9A80200B3C05B /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB5B148923A9B42300B3C05B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FB5B148A23A9B43000B3C05B /* AlertHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		FB5B4AF023A3144300AECFAB = {
 			isa = PBXGroup;
 			children = (
@@ -82,16 +120,25 @@
 		FB5B4AFB23A3144300AECFAB /* Clase10 */ = {
 			isa = PBXGroup;
 			children = (
+				FB5B148923A9B42300B3C05B /* Utils */,
+				FB5B148423A9A7EB00B3C05B /* Model */,
+				FB5B148323A9A6AD00B3C05B /* Controllers */,
 				FB5B4AFC23A3144300AECFAB /* AppDelegate.swift */,
-				FB5B4AFE23A3144300AECFAB /* LoginViewController.swift */,
 				FB5B4B0023A3144300AECFAB /* Main.storyboard */,
 				FB5B4B0323A3144500AECFAB /* Assets.xcassets */,
 				FB5B4B0523A3144500AECFAB /* LaunchScreen.storyboard */,
 				FB5B4B0823A3144500AECFAB /* Info.plist */,
 				FB5B4B0E23A315A200AECFAB /* GoogleService-Info.plist */,
-				FB5B4B1023A3223400AECFAB /* RegisterViewController.swift */,
 			);
 			path = Clase10;
+			sourceTree = "<group>";
+		};
+		FBF9C49E23A9C84B0027A838 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FBF9C49F23A9C8610027A838 /* UserTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5B148B23A9B43000B3C05B /* AlertHelper.swift in Sources */,
+				FB5B148623A9A80200B3C05B /* User.swift in Sources */,
+				FBF9C4A223A9C9F60027A838 /* UserListTableViewController.swift in Sources */,
+				FBF9C4A023A9C8610027A838 /* UserTableViewCell.swift in Sources */,
+				FB5B148823A9AB7C00B3C05B /* ProfileTableViewController.swift in Sources */,
 				FB5B4B1123A3223400AECFAB /* RegisterViewController.swift in Sources */,
 				FB5B4AFF23A3144300AECFAB /* LoginViewController.swift in Sources */,
 				FB5B4AFD23A3144300AECFAB /* AppDelegate.swift in Sources */,

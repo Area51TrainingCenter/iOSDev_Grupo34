@@ -29,6 +29,8 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: mail, password: password) { (auth, error) in
             if let error = error {
                 print(error.localizedDescription)
+                AlertHelper.showAlert(title: "Error", message: "\(error.localizedDescription)", vc: self)
+                return
             }
             if let auth = auth {
                 let userid = auth.user.uid
